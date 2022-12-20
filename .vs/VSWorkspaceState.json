@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\images"
   ],
-  "SelectedNode": "\\C:\\Users\\ender\\Source\\Repos\\web_lab",
+  "SelectedNode": "\\src\\images\\comment3.png",
   "PreviewInSolutionExplorer": false
 }
