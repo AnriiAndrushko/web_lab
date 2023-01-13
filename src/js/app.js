@@ -1,7 +1,19 @@
 import '../styles/style.scss';
 
-const sum = (a, b) => a + b;
+const popup = document.getElementById("popup");
+const selectedImage = document.getElementById("selectedImage");
+const images = document.getElementsByClassName("imagesToDisplay");
+let selected = null;
 
-window.addEventListener('load', () => {
-    console.log(`Sum function 1+3 = ${sum(1,3)}`);
+Array.prototype.forEach.call(images, (i) => {
+    i.addEventListener('click', () => {
+        popup.style.transform = 'translateY(0)';
+        selectedImage.src = i.src;
+        //alert("clicked");
+    });
 })
+
+popup.addEventListener('click', () => {
+    popup.style.transform = 'translateY(-100%)';
+})
+

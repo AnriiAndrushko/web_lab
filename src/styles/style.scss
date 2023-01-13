@@ -331,5 +331,26 @@ footer * {
     padding-top: 5px;
     display: inline-flex;
 }
-
 /*#endregion */
+
+/*#region popup*/
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(100, 200, 255, 0.90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 300ms transform;
+    padding: 50px;
+    z-index: 50;
+}
+
+#selectedImage {
+    max-height: 100%;
+}
+/*#endregion*/
