@@ -1,44 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap');
+
 /*#region general*/
 body {
-    background-size: 20%;
+    min-width: 500px;
+    background-size: 200px;
     background-image: url('/images/background.png');
     background-repeat: repeat;
 }
 
 * {
+    font-family: 'IM Fell Great Primer SC', serif;
     margin: 0;
     padding: 0;
 }
-/*#endregion */
-
-/*#region main*/
-
-/*#endregion */
-
-/*#region photo section*/
-
-/*#endregion */
-
-/*#region reviews*/
-
-/*#endregion */
-
-/*#region footer*/
-
-/*#endregion */
-
-
-p {
-    color: rgb(202, 57, 57);
+.greenText {
+    color: darkgreen;
 }
 
-a {
+.purpleText {
+    color: mediumpurple;
+}
+.blueText {
+    color: royalblue;
+}
+/*#endregion */
+/*#region header*/
+header .handler {
+    width: 90%;
+    height: 150px;
+}
+header * {
+    top: 30px;
+    font-size: 40px;
+    overflow: hidden;
+    float: left;
+    left: 30px;
+    display: inline-block;
+    position:relative;
+}
+header .headerBackground {
+   
+    width: 290px;
+    height: 70px;
+    left: 60px;
+    background-color: #A7FFC0;
+    border-radius: 20px;
+    z-index: 10;
+    text-align: right;
+}
+header a {
+    top: 0px;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(101, 132, 255);
-    color: #fff;
-    width: 250px;
-    height: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    color: black;
 }
+header img {
+    position:absolute;
+    left:20px;
+    width: 113px;
+    height: 70px;
+    z-index: 20;
+}
+
+header .menuBtn {
+    left:70px;
+    width: 70px;
+    height: 70px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border-color: white;
+}
+header .stick {
+    position:unset;
+    width: 45px;
+    height: 8px;
+    background-color: #57595A;
+    left: 10%;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    margin-left: 10px;
+    position: center;
+    border-radius: 4px;
+}
+/*#endregion */
+/*#region main*/
+.main{
+    display:inline-block;
+}
+.main .portrait {
+    width: 500px;
+    display: inline-block;
+}
+.main img {
+    margin-left: 50px;
+    width: 410px;
+    height: auto;
+    
+}
+.main .name {
+    font-size: 44px;
+    font-weight: 100;
+}
+.main .whoAmI {
+}
+.main .info {
+    padding-left: 100px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+    font-size: 20px;
+}
+.main h2,h3 {
+    text-align: center;
+}
+.main small {
+    font-size:13px;
+}
+.main .textOnBar .barTypeText {
+    position:relative;
+    top:17px;
+}
+.main .textOnBar .percent {
+    display: flex;
+    align-items:end;
+    justify-content: end;
+}
+
+.main .bottomBar {
+    position: unset;
+    width: 300px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: white;
+}
+.main .topBar {
+    position: unset;
+    height: 7px;
+    border-radius: 4px;
+}
+.main .redDiv {
+    width: 300px;
+    background-color: orangered;
+}
+
+.main .blueDiv {
+    width: 300*0.7px;
+    background-color: blue;
+}
+
+.main .greenDiv {
+    width: 300*0.9px;
+    background-color: greenyellow;
+}
+.main .takeLessonBtn {
+    border: none;
+    background: none;
+    display:block;
+    margin: auto;
+    width: 300px;
+    height: 65px;
+    width:200px;
+    font-size: 30px;
+}
+
+.main .topBtnDiv {
+    position: unset;
+    margin-top: 10px;
+    width: 300px;
+    height: 65px;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+}
+
+.main .bottomBtnDiv {
+    padding-bottom: 5px;
+    position: unset;
+    width: 300px;
+    height: 65px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/*#endregion */
+/*#region photo section*/
+.photoSection h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.photoSection {
+    margin-left: 10px;
+    vertical-align: top;
+    display: inline-block;
+    height: auto;
+}
+
+.photoSection img {
+    width: 300px;
+    height: auto;
+}
+/*#endregion */
+/*#region reviews*/
+.reviews {
+    margin-bottom: 5px;
+}
+.reviews h2 {
+    position: unset;
+    width: 100%;
+    height: 50px;
+    text-align:center;
+    font-size:40px;
+    font-weight:100;
+    background-color: mediumpurple;
+}
+
+
+.reviews .commentBody .mark img {
+    width: 30px;
+    vertical-align: bottom;
+    height: auto;
+}
+.reviews .commentLeft, .reviews .commentRight {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.reviews .commentLeft .commentBody {
+    border-radius: 0px 30px 30px 30px;
+}
+
+.reviews .commentBody {
+    display: inline-block;
+    position: unset;
+    width: clamp(100px, 50%, 700px);
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    background-color: darkgrey;
+}
+
+.reviews .commentRight .commentBody {
+    border-radius: 30px 0px 30px 30px;
+}
+
+.reviews .mark *{
+    display:inline;
+}
+
+.reviews .mark .starbody {
+    position: relative;
+    top: 28.5px;
+    z-index: 1;
+}
+
+.reviews img {
+    width: 80px;
+    vertical-align: top;
+    height: auto;
+    z-index: 2;
+}
+.reviews .mark .star {
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 30px;
+    height: auto;
+}
+
+
+.reviews .commentLeft .mark {
+    text-align: right;
+    margin-right: 40px;
+}
+
+.reviews .markid1 .star5 {
+    object-fit: cover;
+    margin-left: -30%;
+    object-position: 30*0.3px 0;
+}
+
+.reviews .markid2 .star5, .reviews .markid2 .star4 {
+    object-fit: cover;
+    margin-left: -100%;
+    object-position: 30*1px 0;
+}
+.reviews .markid2 .star3 {
+    object-fit: cover;
+    margin-left: -70%;
+    object-position: 30*0.7px 0;
+}
+
+.reviews .markid3 .star5 {
+    object-fit: cover;
+    margin-left: -50%;
+    object-position: 30*0.5px 0;
+}
+
+.reviews .mark .starbody{
+    
+}
+
+.reviews .commentRight .mark {
+    text-align: left;
+    margin-left: 20px;
+}
+
+/*#endregion */
+/*#region footer*/
+footer {
+    font-size: 30px;
+    font-weight: 100;
+    background-color: mediumpurple;
+    border-radius: 10px 10px 0 0;
+}
+footer img {
+    width: auto;
+    height: 30px;
+}
+
+footer .email img {
+    width: auto;
+    height: 30px;
+}
+
+footer * {
+    margin-left: 30px;
+    padding-top: 5px;
+    display: inline-flex;
+}
+
+/*#endregion */
